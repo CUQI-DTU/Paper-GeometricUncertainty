@@ -1,5 +1,11 @@
 %This script produces the chain plots (figure 3,4,5) in the article.
 
+%Load results file produced by 'Simple_MCMC_driver.m' script
+load('my_results.mat')
+
+%filename for produced plot
+filename = 'my_chain_plot';
+
 %1000 600 first
 figure('Position',[100 100 1000 600])
 
@@ -9,10 +15,7 @@ set(groot,'defaultTextInterpreter','latex');
 set(groot,'defaultColorbarTickLabelInterpreter','latex');
 %formatspec = '%0.3f';
 
-%Load results struct
-load('B3L1.mat')
 %%
-filename = 'my_chain_plot';
 
 %ystart = [0.72, 0.51, 0.30, 0.09];
 %ystart = [0.72,0.50,0.28,0.06] + 0.02;
