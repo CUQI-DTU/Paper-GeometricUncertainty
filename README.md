@@ -3,6 +3,7 @@ This repository contains code for handling uncertainty in the projection geometr
 For the experiments in the paper, we ran Matlab version 2020a on a linux system.
 
 How to use:
+
 To obtain figure 2 in the paper, first run the script 'BeadsRecon_Driver.m' to compute the reconstructions, and then run the script 'PlotBeads_MAP.m'.
 
 To obtain similar sample chains to the ones presented in the paper you can run the script 'Simple_MCMC_driver.m' for the different configurations. You can use the
