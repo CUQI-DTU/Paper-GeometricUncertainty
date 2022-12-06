@@ -6,7 +6,7 @@ To obtain similar sample chains to the ones presented in the paper you can run t
 scripts 'ChainPlots.m' and 'ReconPlots.m' to create plots of the parameter chains and plots of the reconstructions. If you want to vary other parameters, you can
 use the script 'advanced_MCMC_driver.m'.
 
-The code is entirely based on Matlab. For the experiments in the paper, we ran version 2020a on a linux system.
+For the experiments in the paper, we ran Matlab version 2020a on a linux system.
 
 Dependencies:
 
