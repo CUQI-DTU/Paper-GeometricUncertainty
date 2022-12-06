@@ -2,10 +2,13 @@
 %article. There may be some slight differences due to the seed
 
 %All the units in the software are in physical units of millimeter instead of pixels, which is why
-%the numerical values for the center-of-rotation proposal step size is different
+%the numerical values for the center-of-rotation proposal step size are different
 
 %Set your parent directory for the SparseBeads data
 path_beads = '/zhome/94/f/108663/Desktop/CT-article/Geometric-Uncertainty-for-X-ray-CT-main/Sophilyplum/SparseBeadsData';
+
+%Filename for the results file
+filename = 'my_results_file.mat';
 
 %Configurations from the paper
 
@@ -28,9 +31,8 @@ k_gibbs = 6000;
 %k_gibbs = 10000;
 
 %Perform the experiments (initialization, MCMC sampling, COM/XCORR
-%correction)
+%correction). Res is a struct that saves all the parameter chains and reconstructions as well as the scan setup
 res = MCMC_config(BeadSet,s,k_gibbs,angular_range,path_beads);
 
 %Save the results
-filename = 'B3L1_results'; %Filename for the results file
 save(filename,'res')
