@@ -8,7 +8,7 @@ set(groot,'defaultColorbarTickLabelInterpreter','latex');
 
 cmin = 0; cmax = 0.13;
 
-%Load results
+%Load results file from the '
 load('COR_BeadsRecon_MAP.mat');
 
 %cor_vec = dx_vec;
