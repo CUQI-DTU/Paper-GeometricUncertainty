@@ -9,8 +9,8 @@ set(groot,'defaultTextInterpreter','latex');
 set(groot,'defaultColorbarTickLabelInterpreter','latex');
 %formatspec = '%0.3f';
 
-%Load results
-load('Presentation_LowB3L1.mat')
+%Load results struct
+load('B3L1.mat')
 %%
 filename = 'my_chain_plot';
 
