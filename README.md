@@ -2,12 +2,18 @@ This repository contains code for handling uncertainty in the projection geometr
 
 For the experiments in the paper, we ran Matlab version 2020a on a linux system.
 
-How to use:
+Recreate similar figures (slight deviations due to seed) to the ones in the paper:
 
-To obtain figure 2 in the paper, first run the script 'BeadsRecon_Driver.m' to compute the reconstructions, and then run the script 'PlotBeads_MAP.m'.
+Figure 2:
 
-To obtain similar sample chains to the ones presented in the paper you can run the script 'Simple_MCMC_driver.m' for the different configurations. You can use the
-script 'ChainPlot.m' to create chain plots similar to figures 3,4,5 in the paper. When results for all configurations have been obtained, you can use 'ReconPlot_AllMethods.m' to create figures of the reconstructions similar to figure 6 in the paper.
+First run the script 'BeadsRecon_Driver.m' to compute and save the reconstructions. Then run the script 'PlotBeads_MAP.m' to plot the reconstructions.
+
+Figure 3-5:
+
+First run the script 'Simple_MCMC_driver.m' for the different configurations (high-dose, low-dose, and short-scan) to compute and save the parameter chains. Then run the script 'ChainPlot.m' to plot the chains.
+
+Figure 6:
+Run the script 'Simple_MCMC_driver.m' for all configurations to compute and save the reconstructions. Then run the script 'ReconPlot_AllMethods.m'.
 
 If you want to play around with other parameters, you can use the script 'Advanced_MCMC_driver.m'.
 
