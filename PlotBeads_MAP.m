@@ -1,4 +1,8 @@
 %This script produces the reconstruction plot (figure 2)
+
+%Load results file from the 'BeadsRecon_Driver.m' script
+load('my_results_file.mat');
+
 %%
 figure('Position',[100 100 1000 1000])
 set(groot, 'defaultAxesTickLabelInterpreter','latex');
@@ -7,9 +11,6 @@ set(groot,'defaultTextInterpreter','latex');
 set(groot,'defaultColorbarTickLabelInterpreter','latex');
 
 cmin = 0; cmax = 0.13;
-
-%Load results file from the 'BeadsRecon_Driver.m' script
-load('my_results_file.mat');
 
 %cor_vec = dx_vec;
 %ystart = [0.72, 0.51, 0.30, 0.09];
