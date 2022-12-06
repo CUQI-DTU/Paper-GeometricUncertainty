@@ -9,15 +9,15 @@ cor_vec = zeros(1,12);
 formatspec = '%0.2f';
 
 %Load the results sequentially
-load('Presentation_B3L1.mat');
+load('B3L1.mat');
 x_recon(:,1) = res.X_MAP_ini; x_recon(:,2) = res.x_mean; x_recon(:,3) = res.X_MAP_com; x_recon(:,4) = res.X_MAP_xcorr;
 cor_vec(1) = 0; cor_vec(2) = mean(res.cor_samps(end-1000:end)); cor_vec(3) = res.dx_com*res.setup.sy_true/(res.setup.sy_true + res.setup.dy_true); cor_vec(4) = res.dx_xcorr*res.setup.sy_true/(res.setup.sy_true + res.setup.dy_true);
 
-load('Presentation_LowB3L1.mat')
+load('LowB3L1.mat')
 x_recon(:,5) = res.X_MAP_ini; x_recon(:,6) = res.x_mean; x_recon(:,7) = res.X_MAP_com; x_recon(:,8) = res.X_MAP_xcorr;
 cor_vec(5) = 0; cor_vec(6) = mean(res.cor_samps(end-1000:end)); cor_vec(7) = res.dx_com*res.setup.sy_true/(res.setup.sy_true + res.setup.dy_true); cor_vec(8) = res.dx_xcorr*res.setup.sy_true/(res.setup.sy_true + res.setup.dy_true);
 
-load('Presentation_B3L1limangle.mat');
+load('B3L1limangle.mat');
 x_recon(:,9) = res.X_MAP_ini; x_recon(:,10) = res.x_mean; x_recon(:,11) = res.X_MAP_com; x_recon(:,12) = res.X_MAP_xcorr;
 cor_vec(9) = 0; cor_vec(10) = mean(res.cor_samps(end-1000:end)); cor_vec(11) = res.dx_com*res.setup.sy_true/(res.setup.sy_true + res.setup.dy_true); cor_vec(12) = res.dx_xcorr*res.setup.sy_true/(res.setup.sy_true + res.setup.dy_true);
 
