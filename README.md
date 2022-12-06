@@ -2,9 +2,9 @@ This repository contains code for handling uncertainty in the projection geometr
 and it is connected to the paper 'A Bayesian Approach to CT Reconstruction with Uncertain Geometry'.
 
 How to use:
-To obtain similar sample chains to the ones presented in the paper you can run the script 'simple_MCMC_driver.m' for the different configurations. You can then use the
+To obtain similar sample chains to the ones presented in the paper you can run the script 'Simple_MCMC_driver.m' for the different configurations. You can then use the
 scripts 'ChainPlots.m' and 'ReconPlots.m' to create plots of the parameter chains and plots of the reconstructions. If you want to vary other parameters, you can
-use the script 'advanced_MCMC_driver.m'.
+use the script 'Advanced_MCMC_driver.m'.
 
 For the experiments in the paper, we ran Matlab version 2020a on a linux system.
 
