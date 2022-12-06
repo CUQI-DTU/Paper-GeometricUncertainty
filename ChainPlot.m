@@ -1,7 +1,7 @@
 %This script produces the chain plots (figure 3,4,5) in the article.
 
 %Load results file produced by 'Simple_MCMC_driver.m' script
-load('my_results.mat')
+load('my_MCMC_results.mat')
 
 %filename for produced plot
 filename = 'my_chain_plot';
