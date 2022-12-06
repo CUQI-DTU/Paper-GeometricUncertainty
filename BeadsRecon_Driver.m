@@ -1,10 +1,12 @@
-f = fullfile('/zhome','94','f','108663','Desktop','CT-article');
-addpath(genpath(f));
+%Set directory to SparseBeads data
+toppathname = '/zhome/94/f/108663/Desktop/CT-article/Geometric-Uncertainty-for-X-ray-CT-main/Sophilyplum/SparseBeadsData';
+
+%Set filename for the results
+%filename_results = 'my_file_name.mat';
 
 %Load the data
 beadset = 'B3L1'; % SparseBeads dataset identifier.
 setup.beadset = beadset;
-toppathname = '/zhome/94/f/108663/Desktop/CT-article/Geometric-Uncertainty-for-X-ray-CT-main/Sophilyplum/SparseBeadsData'; % Parent directory to dataset directory
 
 % Derived parameters
 filename = ['SparseBeads_',beadset]; % Name of the dataset e.g. 'SparseBeads_B1L1'
@@ -83,10 +85,5 @@ else
    end
 end
 
-folder_dir = fullfile('/zhome','94','f','108663','Desktop','CT-article','Results','Real_Data','Beads');
-
-filename = datestr(now, 'dd-mm-yy-HH:MM:SS');
-
-f = fullfile(folder_dir,filename);
-save(f,'x_recon','cor_vec','dx_vec')
+save(filename_results,'x_recon','cor_vec','dx_vec')
 
