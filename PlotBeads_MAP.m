@@ -9,7 +9,7 @@ set(groot,'defaultColorbarTickLabelInterpreter','latex');
 cmin = 0; cmax = 0.13;
 
 %Load results
-load('COR_BeadsReconNewnewnew.mat');
+load('COR_BeadsRecon_MAP.mat');
 
 %cor_vec = dx_vec;
 %ystart = [0.72, 0.51, 0.30, 0.09];
