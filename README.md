@@ -10,6 +10,9 @@ The code is entirely based on Matlab. For the experiments in the paper, we ran v
 
 Dependencies:
 astra-toolbox: https://www.astra-toolbox.com/ (v. 1.8.3)
+
 spot-toolbox: https://github.com/mpf/spot
+
 sophiabeads: https://sophilyplum.github.io/sophiabeads-datasets/
+
 Nvidia GPU with atleast CUDA 8.0
