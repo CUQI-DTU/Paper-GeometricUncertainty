@@ -9,10 +9,13 @@ use the script 'advanced_MCMC_driver.m'.
 The code is entirely based on Matlab. For the experiments in the paper, we ran version 2020a on a linux system.
 
 Dependencies:
+
 astra-toolbox: https://www.astra-toolbox.com/ (v. 1.8.3)
 
 spot-toolbox: https://github.com/mpf/spot
 
 sophiabeads: https://sophilyplum.github.io/sophiabeads-datasets/
+
+SparseBeads data: https://zenodo.org/record/290117#.Y48-4nbMIuU
 
 Nvidia GPU with atleast CUDA 8.0
