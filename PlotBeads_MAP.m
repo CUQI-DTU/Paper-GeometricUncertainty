@@ -8,8 +8,8 @@ set(groot,'defaultColorbarTickLabelInterpreter','latex');
 
 cmin = 0; cmax = 0.13;
 
-%Load results file from the '
-load('COR_BeadsRecon_MAP.mat');
+%Load results file from the 'BeadsRecon_Driver.m' script
+load('my_results_file.mat');
 
 %cor_vec = dx_vec;
 %ystart = [0.72, 0.51, 0.30, 0.09];
