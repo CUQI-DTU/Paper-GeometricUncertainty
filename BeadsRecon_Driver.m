@@ -2,7 +2,7 @@
 toppathname = '/zhome/94/f/108663/Desktop/CT-article/Geometric-Uncertainty-for-X-ray-CT-main/Sophilyplum/SparseBeadsData';
 
 %Set filename for the results
-%filename_results = 'my_file_name.mat';
+filename_results = 'my_file_name.mat';
 
 %Load the data
 beadset = 'B3L1'; % SparseBeads dataset identifier.
