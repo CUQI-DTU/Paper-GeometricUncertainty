@@ -294,9 +294,4 @@ res.x_MAP_com_new = x_MAP_com_new;
 res.x_MAP_xcorr_new = x_MAP_xcorr_new;
 res.x_MAP_mcmc_new = x_MAP_mcmc_new;
 
-folder_dir = fullfile('/zhome','94','f','108663','Desktop','CT-article','Results','Real_Data','Beads');
-
-filename = datestr(now, 'dd-mm-yy-HH:MM:SS');
-
-f = fullfile(folder_dir,filename);
-save(f,'res')
+end
