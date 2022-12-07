@@ -2,6 +2,10 @@ This repository contains code for handling uncertainty in the projection geometr
 
 For the experiments in the paper, we ran Matlab version 2020a on a linux system.
 
+The below procedures describe how to run the experiments to produce the results of the paper. Slight differences due to different choices of random seed may be observed. The specific resulting data that were used for the paper are provided at
+https://doi.org/10.5281/zenodo.7408467
+If using these provided data, all steps described below to run experiments can be skipped and just the plotting carried out.
+
 Recreate similar figures (slight deviations due to seed) to the ones in the paper:
 
 Figure 2:
