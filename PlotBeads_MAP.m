@@ -3,6 +3,9 @@
 %Load results file from the 'BeadsRecon_Driver.m' script
 load('my_results_file.mat');
 
+%Set filename for produced figure
+filename = 'my_recon_plot';
+
 %%
 figure('Position',[100 100 1000 1000])
 set(groot, 'defaultAxesTickLabelInterpreter','latex');
@@ -63,4 +66,4 @@ end
 colorbar(ax3,'location','southoutside','Position',...
       [0.05 0.47 0.62 0.02]);
   
-saveas(gcf,'ReconplotCOR','epsc')
+saveas(gcf,filename,'epsc')
